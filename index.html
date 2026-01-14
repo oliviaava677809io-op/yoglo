@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta name="keywords" content="yoga, yoga studio, meditation, wellness, fitness, health, relaxation, mindfulness, yoga classes, yoga teacher, yoga poses, yoga practice, yoga retreat, yoga workshop, yoga community, holistic, spiritual, healing, flexibility, strength, balance, peace, tranquility, zen, asanas, " />
+        <meta name="description" content="Discover tranquility and enhance your well-being at our premier yoga studio. Offering a wide variety of classes suitable for all levels, from beginners to advanced practitioners, we provide a serene environment to deepen your practice. Our experienced instructors are dedicated to guiding you on your journey to improved health and mindfulness. Join us to experience the benefits of yoga in a supportive and welcoming community. Explore our class schedule, workshops, and special events to find the perfect fit for your lifestyle." />
+
+        <title>Embrace Tranquility with BBKIZK Yoga</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel='stylesheet' href='css/boxicons.min.css'>
+        <link rel="stylesheet" href="css/aos.css">
+        <link rel="stylesheet" href="css/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    </head>
+    <body>
+    
+    <!-- Header Block: Floating Glass Navigation with Slide-In Mobile Menu -->
+<header class="header-glass-nav" id="main-header">
+    <nav class="nav-container">
+    <div class="nav-wrapper">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+        <div class="logo-circle"></div>
+        <span class="brand-text">BBKIZK</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <ul class="nav-menu" id="navMenu">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item dropdown-trigger">
+            <button class="nav-link dropdown-btn" id="pagesDropdown">
+            Blog
+            <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            </button>
+            <ul class="dropdown-menu-new" id="dropdownMenu">
+            <li><a href="revitalize-your-mind-and-body-at-bbkizks-exclusive-yoga-retreat.html" class="dropdown-link">Revitalize Your Mind and Body at BBKIZK's Exclusive Yoga Retreat</a></li>
+            <li><a href="embrace-wellness-at-bbkizk-with-the-power-of-asanas.html" class="dropdown-link">Embrace Wellness at BBKIZK with the Power of Asanas</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a href="reviews.html" class="nav-link">Testimonials</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-link">About Us</a>
+        </li>
+        </ul>
+        
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        </button>
+    </div>
+    </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+</header>
+
+<!-- JavaScript for Header Functionality -->
+<script>
+(function() {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navMenu = document.getElementById('navMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const pagesDropdown = document.getElementById('pagesDropdown');
+    const header = document.getElementById('main-header');
+    
+    // Toggle mobile menu
+    function toggleMobileMenu() {
+    hamburgerBtn.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    mobileOverlay.classList.toggle('active');
+    document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    // Close mobile menu
+    function closeMobileMenu() {
+    hamburgerBtn.classList.remove('active');
+    navMenu.classList.remove('active');
+    mobileOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+    }
+    
+    // Toggle dropdown menu
+    function toggleDropdown(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const parentItem = pagesDropdown.closest('.dropdown-trigger');
+    parentItem.classList.toggle('active');
+    }
+    
+    // Event listeners
+    hamburgerBtn.addEventListener('click', toggleMobileMenu);
+    mobileOverlay.addEventListener('click', closeMobileMenu);
+    pagesDropdown.addEventListener('click', toggleDropdown);
+
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+    if (!e.target.closest('.dropdown-trigger')) {
+        document.querySelectorAll('.dropdown-trigger').forEach(item => {
+        item.classList.remove('active');
+        });
+    }
+    });
+    
+    // Header scroll effect
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 100) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+    
+    lastScroll = currentScroll;
+    });
+    
+    // Close mobile menu on window resize
+    window.addEventListener('resize', () => {
+    if (window.innerWidth > 992) {
+        closeMobileMenu();
+    }
+    });
+})();
+</script>
+
+<main>
+<!-- Hero Block: Asymmetric Gradient Wave Design with Floating Elements -->
+<section class="hero-wave-block xvofwcb" id="about" data-aos="fade-in">
+    <div class="hero-background-wrapper">
+    <div class="hero-bg-image" style="background-image: url('/img/image-background.png');"></div>
+    <div class="hero-gradient-overlay"></div>
+    <div class="hero-floating-shapes">
+        <div class="float-shape shape-1"></div>
+        <div class="float-shape shape-2"></div>
+        <div class="float-shape shape-3"></div>
+        <div class="float-shape shape-4"></div>
+    </div>
+    </div>
+    
+    <header class="hero-header-nav" role="banner">
+    <div class="hero-nav-container">
+        <div class="hero-logo-area">
+        <svg class="hero-logo-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="23" stroke="currentColor" stroke-width="3"/>
+            <path d="M15 25L22 32L35 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </div>
+        
+        <input type="checkbox" id="about" class="hero-menu-checkbox" aria-label="Toggle navigation menu">
+        <label for="hero-menu-toggle" class="hero-hamburger" aria-label="Menu button">
+        <span class="hero-ham-line"></span>
+        <span class="hero-ham-line"></span>
+        <span class="hero-ham-line"></span>
+        </label>
+        
+        <nav class="hero-nav-menu xvofwcb" role="navigation" aria-label="Main navigation">
+        <div class="hero-nav-backdrop"></div>
+        <ul class="hero-nav-list">
+            <li class="hero-nav-item">
+            <a href="#contact" class="hero-nav-link">Contact</a>
+            </li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+    
+    <div class="hero-content-wrapper">
+    <div class="hero-content-container">
+        <div class="hero-text-column">
+        <div class="hero-badge-pill">
+            <svg class="hero-badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" fill="currentColor"/>
+            </svg>
+        </div>
+        
+        <h1 class="hero-main-title">Embrace Tranquility with BBKIZK Yoga</h1>
+        
+        <div class="hero-title-decoration">
+            <span class="hero-deco-line"></span>
+            <svg class="hero-deco-star" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+            </svg>
+            <span class="hero-deco-line"></span>
+        </div>
+        
+        <p class="hero-subtitle">Welcome to BBKIZK, your sanctuary for peace and inner harmony. Our yoga studio offers a serene environment where you can unwind, stretch, and rejuvenate both body and mind. Join us in discovering the transformative power of yoga through expert guidance and a supportive community. Step onto the mat and begin your journey towards holistic well-being.</p>
+        
+        <div class="hero-cta-group xvofwcb">
+            <a href="#contact" class="hero-btn hero-btn-primary">
+            <span class="hero-btn-text">Contact</span>
+            <svg class="hero-btn-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </a>
+        </div>
+        
+        <div class="hero-trust-badges">
+            <div class="hero-trust-item">
+            <svg class="hero-trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/>
+            </svg>
+            </div>
+            <div class="hero-trust-item">
+            <svg class="hero-trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </div>
+            <div class="hero-trust-item">
+            <svg class="hero-trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" fill="currentColor"/>
+            </svg>
+            </div>
+        </div>
+        </div>
+        
+        <div class="hero-visual-column">
+        <div class="hero-floating-card hero-card-1">
+            <div class="hero-card-glow"></div>
+            <svg class="hero-card-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="3"/>
+            <path d="M32 16v16l11 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </div>
+        
+        <div class="hero-floating-card hero-card-2">
+            <div class="hero-card-glow"></div>
+            <svg class="hero-card-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 32l8 8 16-16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="3"/>
+            </svg>
+        </div>
+        
+        <div class="hero-floating-card hero-card-3">
+            <div class="hero-card-glow"></div>
+            <svg class="hero-card-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 12v40M12 32h40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="3"/>
+            </svg>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="hero-wave-divider">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,0 C300,80 600,80 900,40 C1050,20 1100,60 1200,60 L1200,120 L0,120 Z" fill="currentColor"/>
+    </svg>
+    </div>
+</section>
+
+<!-- Features Block: Chess Grid Layout with Organic Shapes -->
+<section class="features-chess-grid" id="features-organic-shapes" data-aos="fade-up">
+    <div class="container">
+    <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card feature-card-1" data-aos="zoom-in" data-aos-delay="100">
+        <div class="feature-blob blob-1"></div>
+        <div class="feature-image-wrapper">
+            <img src="img/image23451.png" alt="Feature one illustration" class="feature-image">
+        </div>
+        <div class="feature-content">
+            <h3 class="feature-title">Expert Instructors</h3>
+            <p class="feature-description">Our yoga studio boasts a team of highly qualified instructors with years of experience. They are dedicated to guiding you through every pose and ensuring you get the most out of your practice.</p>
+        </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card feature-card-2" data-aos="zoom-in" data-aos-delay="200">
+        <div class="feature-blob blob-2"></div>
+        <div class="feature-image-wrapper">
+            <img src="img/image23452.png" alt="Feature two illustration" class="feature-image">
+        </div>
+        <div class="feature-content">
+            <h3 class="feature-title">Tranquil Environment</h3>
+            <p class="feature-description">Step into a serene and calming atmosphere designed to help you unwind and focus. Our studio is a peaceful oasis where you can escape the hustle and bustle of everyday life.</p>
+        </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card feature-card-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="feature-blob blob-3"></div>
+        <div class="feature-image-wrapper">
+            <img src="img/image23453.png" alt="Feature three illustration" class="feature-image">
+        </div>
+        <div class="feature-content">
+            <h3 class="feature-title">Flexible Class Schedule</h3>
+            <p class="feature-description">We offer a variety of classes at different times throughout the week to fit your busy schedule. Whether you're an early riser or prefer evening sessions, you'll find a class that suits your needs.</p>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Services Block: Floating Card Grid with Gradient Accents -->
+<section class="services-floating-grid" id="services-section-fgx" data-aos="fade-up">
+    <div class="services-container-wrapper">
+    <div class="services-header-zone" data-aos="zoom-in" data-aos-delay="100">
+        <h2 class="services-main-title">Our Services</h2>
+        <div class="title-accent-line"></div>
+    </div>
+    
+    <div class="services-grid-layout">
+        <!-- Service Card 1 -->
+        <article class="service-card-float" data-aos="fade-up" data-aos-delay="150">
+        <div class="service-card-inner">
+            <div class="service-icon-wrapper">
+            <svg class="service-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="28" fill="url(#grad1)" opacity="0.2"/>
+                <path d="M32 12L42 22L32 32L22 22L32 12Z" fill="url(#grad1)"/>
+                <path d="M22 32L32 42L42 32L32 22L22 32Z" fill="url(#grad1)" opacity="0.7"/>
+                <circle cx="32" cy="32" r="6" fill="url(#grad1)"/>
+                <defs>
+                <linearGradient id="grad1" x1="12" y1="12" x2="52" y2="52">
+                    <stop offset="0%" stop-color="#00d4ff"/>
+                    <stop offset="100%" stop-color="#7b2ff7"/>
+                </linearGradient>
+                </defs>
+            </svg>
+            </div>
+            <div class="service-content-block">
+            <h3 class="service-title-text">Personalized Yoga Sessions</h3>
+            <p class="service-description-text">Experience customized yoga classes tailored to your individual needs and goals. Our instructors will design a practice that aligns with your experience level, ensuring a personalized journey towards balance and well-being.</p>
+            </div>
+            <div class="service-action-zone">
+            <a href="contact.html" class="service-more-btn">
+                <span>Learn More</span>
+                <svg class="btn-arrow-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+        </article>
+
+        <!-- Service Card 2 -->
+        <article class="service-card-float" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card-inner">
+            <div class="service-icon-wrapper">
+            <svg class="service-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="16" y="16" width="32" height="32" rx="8" fill="url(#grad2)" opacity="0.2"/>
+                <path d="M28 20L36 28L28 36L20 28L28 20Z" fill="url(#grad2)"/>
+                <path d="M36 28L44 36L36 44L28 36L36 28Z" fill="url(#grad2)" opacity="0.7"/>
+                <rect x="30" y="30" width="8" height="8" rx="2" fill="url(#grad2)"/>
+                <defs>
+                <linearGradient id="grad2" x1="16" y1="16" x2="48" y2="48">
+                    <stop offset="0%" stop-color="#ff6b9d"/>
+                    <stop offset="100%" stop-color="#ffa837"/>
+                </linearGradient>
+                </defs>
+            </svg>
+            </div>
+            <div class="service-content-block">
+            <h3 class="service-title-text">Virtual Yoga Classes</h3>
+            <p class="service-description-text">Join our live-streamed yoga sessions from the comfort of your home. These interactive classes allow you to practice alongside our skilled instructors, offering flexibility and convenience without compromising on the quality of instruction.</p>
+            </div>
+            <div class="service-action-zone">
+            <a href="contact.html" class="service-more-btn">
+                <span>Learn More</span>
+                <svg class="btn-arrow-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+        </article>
+
+        <!-- Service Card 3 -->
+        <article class="service-card-float" data-aos="fade-up" data-aos-delay="250">
+        <div class="service-card-inner">
+            <div class="service-icon-wrapper">
+            <svg class="service-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="26" fill="url(#grad3)" opacity="0.2"/>
+                <polygon points="32,14 46,24 46,40 32,50 18,40 18,24" fill="url(#grad3)"/>
+                <circle cx="32" cy="32" r="10" fill="url(#grad3)" opacity="0.8"/>
+                <circle cx="32" cy="32" r="4" fill="#ffffff"/>
+                <defs>
+                <linearGradient id="grad3" x1="18" y1="14" x2="46" y2="50">
+                    <stop offset="0%" stop-color="#00f5a0"/>
+                    <stop offset="100%" stop-color="#00d9f5"/>
+                </linearGradient>
+                </defs>
+            </svg>
+            </div>
+            <div class="service-content-block">
+            <h3 class="service-title-text">Mindfulness and Meditation Workshops</h3>
+            <p class="service-description-text">Enhance your mental clarity and emotional health with our mindfulness and meditation workshops. These sessions teach techniques to manage stress and cultivate a peaceful mind, helping you find inner tranquility in everyday life.</p>
+            </div>
+            <div class="service-action-zone">
+            <a href="contact.html" class="service-more-btn">
+                <span>Learn More</span>
+                <svg class="btn-arrow-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+        </article>
+
+        <!-- Service Card 4 -->
+        <article class="service-card-float" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card-inner">
+            <div class="service-icon-wrapper">
+            <svg class="service-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="12" y="20" width="40" height="24" rx="6" fill="url(#grad4)" opacity="0.2"/>
+                <path d="M20 24L32 32L44 24V40L32 48L20 40V24Z" fill="url(#grad4)"/>
+                <rect x="28" y="28" width="8" height="12" rx="2" fill="url(#grad4)" opacity="0.9"/>
+                <defs>
+                <linearGradient id="grad4" x1="12" y1="20" x2="52" y2="48">
+                    <stop offset="0%" stop-color="#f093fb"/>
+                    <stop offset="100%" stop-color="#f5576c"/>
+                </linearGradient>
+                </defs>
+            </svg>
+            </div>
+            <div class="service-content-block">
+            <h3 class="service-title-text">Corporate Wellness Programs</h3>
+            <p class="service-description-text">Boost employee productivity and workplace morale with our corporate wellness programs. We offer on-site or virtual yoga classes and wellness seminars that promote physical health and mental resilience in the workplace.</p>
+            </div>
+            <div class="service-action-zone">
+            <a href="contact.html" class="service-more-btn">
+                <span>Learn More</span>
+                <svg class="btn-arrow-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+        </article>
+
+        <!-- Service Card 5 -->
+        <article class="service-card-float" data-aos="fade-up" data-aos-delay="350">
+        <div class="service-card-inner">
+            <div class="service-icon-wrapper">
+            <svg class="service-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="24" fill="url(#grad5)" opacity="0.2"/>
+                <path d="M32 16L40 24L48 32L40 40L32 48L24 40L16 32L24 24L32 16Z" fill="url(#grad5)"/>
+                <circle cx="32" cy="32" r="8" fill="url(#grad5)" opacity="0.8"/>
+                <rect x="30" y="30" width="4" height="4" fill="#ffffff"/>
+                <defs>
+                <linearGradient id="grad5" x1="16" y1="16" x2="48" y2="48">
+                    <stop offset="0%" stop-color="#ffd89b"/>
+                    <stop offset="100%" stop-color="#19547b"/>
+                </linearGradient>
+                </defs>
+            </svg>
+            </div>
+            <div class="service-content-block">
+            <h3 class="service-title-text">Yoga Retreats and Immersions</h3>
+            <p class="service-description-text">Embark on a transformative journey with our yoga retreats and immersions. These experiences offer an opportunity to deepen your practice, disconnect from daily stressors, and connect with a community of like-minded individuals in serene locations.</p>
+            </div>
+            <div class="service-action-zone">
+            <a href="contact.html" class="service-more-btn">
+                <span>Learn More</span>
+                <svg class="btn-arrow-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+        </article>
+
+        <!-- Service Card 6 -->
+        <article class="service-card-float" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-card-inner">
+            <div class="service-icon-wrapper">
+            <svg class="service-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="14" y="14" width="36" height="36" rx="10" fill="url(#grad6)" opacity="0.2"/>
+                <polygon points="32,18 42,28 38,38 26,38 22,28" fill="url(#grad6)"/>
+                <circle cx="32" cy="32" r="6" fill="url(#grad6)" opacity="0.9"/>
+                <path d="M32 26V38M26 32H38" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                <defs>
+                <linearGradient id="grad6" x1="14" y1="14" x2="50" y2="50">
+                    <stop offset="0%" stop-color="#a8edea"/>
+                    <stop offset="100%" stop-color="#fed6e3"/>
+                </linearGradient>
+                </defs>
+            </svg>
+            </div>
+            <div class="service-content-block">
+            <h3 class="service-title-text">Specialty Yoga Classes</h3>
+            <p class="service-description-text">Explore unique yoga styles with our specialty classes, including prenatal yoga, restorative yoga, and yoga for athletes. These classes are designed to meet the specific needs of different groups, ensuring an inclusive and supportive environment for all.</p>
+            </div>
+            <div class="service-action-zone">
+            <a href="contact.html" class="service-more-btn">
+                <span>Learn More</span>
+                <svg class="btn-arrow-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+        </article>
+    </div>
+    </div>
+</section>
+
+<section id="about" class="hnmbmm bg-light py-5">
+    <div class="container pt-5">
+        <h2 class="text-center py-5">Revitalize Your Mind and Body at BBKIZK's Exclusive Yoga Retreat</h2>
+        <div class="py-5">Escape the hustle and bustle of everyday life and immerse yourself in tranquility at BBKIZK's exclusive yoga retreat. Nestled in the serene landscapes, our retreat offers a sanctuary for rejuvenating both your mind and body. Whether you're a seasoned yogi or a curious beginner, this retreat is designed to cater to all levels, providing personalized experiences to deepen your practice.Our expert instructors will guide you through daily yoga sessions, incorporating various styles that soothe the soul and strengthen the body. Beyond yoga, indulge in mindful meditation, nature walks, and holistic workshops that enhance your well-being. At BBKIZK, we emphasize a harmonious blend of physical activity, relaxation, and nutritious gourmet meals that nourish the body and spirit.Join us for this transformative journey, where you can connect with nature, meet like-minded individuals, and find your inner peace. Book your spot at the BBKIZK yoga retreat and step into a world of serenity and self-discovery. Your journey to wellness awaits!.</div>
+    </div>
+</section>
+
+<!-- Testimonials Block: Carousel with SVG Avatars -->
+<section class="testimonials-carousel-section" id="testimonials-zx92" data-aos="fade-up">
+    <div class="container">
+    <div class="testimonials-header">
+        <h2 class="testimonials-title">Testimonials</h2>
+    </div>
+    
+    <div class="testimonials-carousel-wrapper">
+        <div class="testimonials-carousel">
+        <input type="radio" name="testimonial-slide" id="slide1" checked>
+        <input type="radio" name="testimonial-slide" id="slide2">
+        <input type="radio" name="testimonial-slide" id="slide3">
+        
+        <div class="testimonials-track">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card" data-slide="1">
+            <div class="testimonial-content">
+                <div class="testimonial-avatar">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                    </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="50" fill="url(#grad1)"/>
+                    <circle cx="50" cy="35" r="15" fill="#ffffff" opacity="0.9"/>
+                    <ellipse cx="50" cy="75" rx="25" ry="20" fill="#ffffff" opacity="0.9"/>
+                </svg>
+                </div>
+                <div class="testimonial-text-wrapper">
+                <div class="quote-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20C10 14.477 14.477 10 20 10V14C16.686 14 14 16.686 14 20H18V30H10V20Z" fill="currentColor" opacity="0.2"/>
+                    <path d="M22 20C22 14.477 26.477 10 32 10V14C28.686 14 26 16.686 26 20H30V30H22V20Z" fill="currentColor" opacity="0.2"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">I've been attending classes at BBKIZK Yoga Studio for the past six months, and the transformation in both my physical and mental well-being has been remarkable. The instructors are incredibly knowledgeable and create a welcoming environment that makes every session a joy. I highly recommend this studio to anyone looking to improve their yoga practice and overall health.</p>
+                <h4 class="testimonial-name">Robert Kelly</h4>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card" data-slide="2">
+            <div class="testimonial-content">
+                <div class="testimonial-avatar">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+                    </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="50" fill="url(#grad2)"/>
+                    <circle cx="50" cy="35" r="15" fill="#ffffff" opacity="0.9"/>
+                    <ellipse cx="50" cy="75" rx="25" ry="20" fill="#ffffff" opacity="0.9"/>
+                </svg>
+                </div>
+                <div class="testimonial-text-wrapper">
+                <div class="quote-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20C10 14.477 14.477 10 20 10V14C16.686 14 14 16.686 14 20H18V30H10V20Z" fill="currentColor" opacity="0.2"/>
+                    <path d="M22 20C22 14.477 26.477 10 32 10V14C28.686 14 26 16.686 26 20H30V30H22V20Z" fill="currentColor" opacity="0.2"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">BBKIZK Yoga Studio has become my sanctuary. The atmosphere is serene, and the variety of classes offered ensures there's something for everyone, regardless of skill level. The community here is supportive and friendly, and I've made lasting friendships. This place is more than just a yoga studio; it's a haven for personal growth and wellness.</p>
+                <h4 class="testimonial-name">Aubrey Edwards</h4>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card" data-slide="3">
+            <div class="testimonial-content">
+                <div class="testimonial-avatar">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+                    </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="50" fill="url(#grad3)"/>
+                    <circle cx="50" cy="35" r="15" fill="#ffffff" opacity="0.9"/>
+                    <ellipse cx="50" cy="75" rx="25" ry="20" fill="#ffffff" opacity="0.9"/>
+                </svg>
+                </div>
+                <div class="testimonial-text-wrapper">
+                <div class="quote-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20C10 14.477 14.477 10 20 10V14C16.686 14 14 16.686 14 20H18V30H10V20Z" fill="currentColor" opacity="0.2"/>
+                    <path d="M22 20C22 14.477 26.477 10 32 10V14C28.686 14 26 16.686 26 20H30V30H22V20Z" fill="currentColor" opacity="0.2"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">I was hesitant to try yoga, but BBKIZK Yoga Studio came highly recommended by a friend. From my first class, I felt welcomed and at ease. The instructors are patient and provide clear guidance, which has helped me progress quickly. The studio's commitment to creating a peaceful and inclusive space is evident in every detail. It's been a life-changing experience for me!</p>
+                <h4 class="testimonial-name">Gary Adams</h4>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="carousel-controls">
+            <label for="slide1" class="carousel-dot" aria-label="Go to testimonial 1"></label>
+            <label for="slide2" class="carousel-dot" aria-label="Go to testimonial 2"></label>
+            <label for="slide3" class="carousel-dot" aria-label="Go to testimonial 3"></label>
+        </div>
+        
+        <div class="carousel-navigation">
+            <label for="slide3" class="carousel-nav carousel-prev" aria-label="Previous testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </label>
+            <label for="slide2" class="carousel-nav carousel-next" aria-label="Next testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </label>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<script>
+// Pure CSS carousel - auto-advance functionality
+(function() {
+    const slides = document.querySelectorAll('input[name="testimonial-slide"]');
+    let currentSlide = 0;
+    
+    function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].checked = true;
+    }
+    
+    // Auto-advance every 5 seconds
+    setInterval(nextSlide, 5000);
+    
+    // Update navigation labels dynamically
+    const prevNav = document.querySelector('.carousel-prev');
+    const nextNav = document.querySelector('.carousel-next');
+    
+    slides.forEach((slide, index) => {
+    slide.addEventListener('change', function() {
+        if (this.checked) {
+        currentSlide = index;
+        const prevIndex = (index - 1 + slides.length) % slides.length;
+        const nextIndex = (index + 1) % slides.length;
+        prevNav.setAttribute('for', `slide${prevIndex + 1}`);
+        nextNav.setAttribute('for', `slide${nextIndex + 1}`);
+        }
+    });
+    });
+})();
+</script>
+
+
+<!-- FAQ Block: Asymmetric Split Design with Gradient Accent -->
+<section class="faq-section-violet-wave ixjwgv" id="faq-section-vw29" data-aos="fade-up">
+    <div class="container">
+    <div class="faq-header-container">
+        <h2 class="faq-main-title">Frequently Asked Questions</h2>
+        <div class="faq-decorative-blob"></div>
+    </div>
+    
+    <div class="faq-accordion-wrapper">
+        <div class="faq-item faq-item-vw" data-aos="fade-up" data-aos-delay="100">
+        <div class="faq-question-header">
+            <h3 class="faq-question-text">What types of yoga classes do you offer?</h3>
+            <div class="faq-icon-toggle">
+            <svg class="faq-icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <svg class="faq-icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            </div>
+        </div>
+        <div class="faq-answer-content">
+            <div class="faq-answer-inner">
+            <p>We offer a variety of yoga classes including Hatha, Vinyasa, Ashtanga, Yin, and Restorative yoga. Each class is designed to cater to different levels of experience, from beginners to advanced practitioners.</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="faq-item faq-item-vw" data-aos="fade-up" data-aos-delay="150">
+        <div class="faq-question-header">
+            <h3 class="faq-question-text">Do I need to bring my own yoga mat?</h3>
+            <div class="faq-icon-toggle">
+            <svg class="faq-icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <svg class="faq-icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            </div>
+        </div>
+        <div class="faq-answer-content">
+            <div class="faq-answer-inner">
+            <p>While we encourage you to bring your own mat for personal comfort and hygiene, we also provide mats and other necessary equipment for use during the class at no extra charge.</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="faq-item faq-item-vw" data-aos="fade-up" data-aos-delay="200">
+        <div class="faq-question-header">
+            <h3 class="faq-question-text">Are there any membership options available?</h3>
+            <div class="faq-icon-toggle">
+            <svg class="faq-icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <svg class="faq-icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            </div>
+        </div>
+        <div class="faq-answer-content">
+            <div class="faq-answer-inner">
+            <p>Yes, we offer several membership plans including drop-in classes, monthly unlimited passes, and annual memberships to suit your needs and schedule.</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="faq-item faq-item-vw" data-aos="fade-up" data-aos-delay="250">
+        <div class="faq-question-header">
+            <h3 class="faq-question-text">Can beginners join your classes?</h3>
+            <div class="faq-icon-toggle">
+            <svg class="faq-icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <svg class="faq-icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            </div>
+        </div>
+        <div class="faq-answer-content">
+            <div class="faq-answer-inner">
+            <p>Absolutely! Our classes are designed to accommodate all skill levels, and our instructors are skilled at modifying poses and providing guidance to beginners.</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="faq-item faq-item-vw" data-aos="fade-up" data-aos-delay="300">
+        <div class="faq-question-header">
+            <h3 class="faq-question-text">How can I book a class?</h3>
+            <div class="faq-icon-toggle">
+            <svg class="faq-icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <svg class="faq-icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            </div>
+        </div>
+        <div class="faq-answer-content">
+            <div class="faq-answer-inner">
+            <p>You can book a class through our online scheduling system on our website. Simply select the class you are interested in and follow the prompts to reserve your spot.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<script>
+    // FAQ Accordion Toggle Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item-vw');
+    
+    faqItems.forEach(item => {
+        const questionHeader = item.querySelector('.faq-question-header');
+        
+        questionHeader.addEventListener('click', function() {
+        const isActive = item.classList.contains('faq-active');
+        
+        // Close all other FAQ items
+        faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+            otherItem.classList.remove('faq-active');
+            }
+        });
+        
+        // Toggle current item
+        if (isActive) {
+            item.classList.remove('faq-active');
+        } else {
+            item.classList.add('faq-active');
+        }
+        });
+        
+        // Keyboard accessibility
+        questionHeader.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            questionHeader.click();
+        }
+        });
+    });
+    });
+</script>
+
+<section class="contact-info-block-x7k2" id="contact" data-aos="fade-up">
+    <div class="contact-container-wrapper">
+    <div class="contact-inner-grid">
+        
+        <!-- Header Section -->
+        <div class="contact-header-zone" data-aos="fade-down" data-aos-delay="100">
+        <h2 class="contact-main-title">Get In Touch</h2>
+        <div class="title-accent-line"></div>
+        </div>
+        
+        <!-- Contact Details Cards -->
+        <div class="contact-details-column" data-aos="fade-right" data-aos-delay="200">
+        
+        <!-- Address Card -->
+        <div class="contact-card-item address-card-unique">
+            <div class="card-icon-wrapper">
+            <svg class="contact-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+            </svg>
+            </div>
+            <div class="card-content-text">
+            <span class="contact-label-text">Visit Us</span>
+            <p class="contact-value-text">USA, San Francisco, 02 Irma Flat Suite 572</p>
+            </div>
+        </div>
+        
+        <!-- Phone Card -->
+        <div class="contact-card-item phone-card-unique">
+            <div class="card-icon-wrapper">
+            <svg class="contact-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+            </svg>
+            </div>
+            <div class="card-content-text">
+            <span class="contact-label-text">Call Us</span>
+            <a href="tel:1 379-122-7792" class="contact-value-text contact-link-hover">1 379-122-7792</a>
+            </div>
+        </div>
+        
+        <!-- Email Card -->
+        <div class="contact-card-item email-card-unique">
+            <div class="card-icon-wrapper">
+            <svg class="contact-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+            </svg>
+            </div>
+            <div class="card-content-text">
+            <span class="contact-label-text">Email Us</span>
+            <span class="contact-value-text email-text"></span>
+            </div>
+        </div>
+        
+        </div>
+        
+        <!-- Map Section -->
+        <div class="contact-map-column" data-aos="fade-left" data-aos-delay="300">
+        <div class="map-frame-container">
+            <div class="map-overlay-border"></div>
+            <div class="map-embed-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.029826148755!2d-122.47879945517765!3d37.757760688632494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2snl!4v1687183645524!5m2!1sen!2snl" style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    
+    <!-- Decorative Background Elements -->
+    <div class="bg-decoration-circle circle-top-right"></div>
+    <div class="bg-decoration-circle circle-bottom-left"></div>
+    </div>
+</section>
+
+<section class="contact-form-block-zx8q" id="contact-zx8q" data-aos="fade-up" data-aos-duration="800">
+    <div class="contact-container-zx8q">
+    <div class="contact-form-wrapper-zx8q">
+        <div class="form-header-zx8q">
+        <h2 class="form-title-zx8q">Get In Touch</h2>
+        <div class="title-underline-zx8q"></div>
+        </div>
+        
+        <form class="contact-form-zx8q" method="POST" action="order.php">
+        <div class="form-group-zx8q">
+            <label for="name-zx8q" class="form-label-zx8q">Your Name</label>
+            <input 
+            type="text" 
+            id="name-zx8q" 
+            name="name" 
+            class="form-input-zx8q" 
+            required
+            />
+        </div>
+        
+        <div class="form-group-zx8q">
+            <label for="email-zx8q" class="form-label-zx8q">Email Address</label>
+            <input 
+            type="email" 
+            id="email-zx8q" 
+            name="email" 
+            class="form-input-zx8q" 
+            required
+            />
+        </div>
+        
+        <div class="form-group-zx8q">
+            <label for="message-zx8q" class="form-label-zx8q">Your Message</label>
+            <textarea 
+            id="message-zx8q" 
+            name="message" 
+            class="form-textarea-zx8q" 
+            rows="6" 
+            required
+            ></textarea>
+        </div>
+        
+        <button type="submit" class="form-submit-zx8q">
+            <span class="button-text-zx8q">Send Message</span>
+            <span class="button-arrow-zx8q">→</span>
+        </button>
+        </form>
+    </div>
+    
+    <div class="decorative-shapes-zx8q">
+        <div class="shape-circle-zx8q shape-1-zx8q"></div>
+        <div class="shape-circle-zx8q shape-2-zx8q"></div>
+        <div class="shape-blob-zx8q"></div>
+    </div>
+    </div>
+</section>
+
+</main>
+<footer class="footer-block-modern" id="footer-section-xyz">
+    <div class="footer-container">
+    <!-- Company Info Section -->
+    <div class="footer-company-info" >
+        <h3 class="footer-brand">BBKIZK</h3>
+        <div class="footer-contact-details">
+        <div class="footer-contact-item">
+            <svg class="footer-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+            </svg>
+            <p class="footer-address">USA, San Francisco, 02 Irma Flat Suite 572</p>
+        </div>
+        <div class="footer-contact-item">
+            <svg class="footer-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+            </svg>
+            <a href="tel:1 379-122-7792" class="footer-phone">1 379-122-7792</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Navigation Links Section -->
+    <div class="footer-navigation" >
+        <nav class="footer-nav-grid">
+        <div class="footer-nav-column">
+            <h4 class="footer-nav-title">Navigation</h4>
+            <ul class="footer-nav-list">
+            <li><a href="revitalize-your-mind-and-body-at-bbkizks-exclusive-yoga-retreat.html" class="footer-link">Revitalize Your Mind and Body at BBKIZK's Exclusive Yoga Retreat</a></li>
+            <li><a href="embrace-wellness-at-bbkizk-with-the-power-of-asanas.html" class="footer-link">Embrace Wellness at BBKIZK with the Power of Asanas</a></li>
+            </ul>
+        </div>
+        <div class="footer-nav-column">
+            <h4 class="footer-nav-title">Legal</h4>
+            <ul class="footer-nav-list">
+            <li><a href="policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom" >
+    <div class="footer-divider"></div>
+    <p class="footer-copyright">© 2025 All rights reserved. BBKIZK</p>
+    </div>
+
+    <!-- Decorative Gradient Element -->
+    <div class="footer-gradient-accent"></div>
+</footer>
+
+
+
+    <script type="text/javascript" src="js/popper.js"></script><script> window.start.init({Palette:"palette1",Mode:"banner bottom",Time:"0", Message: "We use cookies to improve the site and its user experience. By continuing to use the site, you agree to the use of cookies. You can always disable cookies in your browser settings.", ButtonText: "Accept", LinkText: "Learn more"})</script>
+        
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>AOS.init();</script>
+    </body>
+</html>

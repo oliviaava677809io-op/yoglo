@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta name="keywords" content="yoga, yoga studio, meditation, wellness, fitness, health, relaxation, mindfulness, yoga classes, yoga teacher, yoga poses, yoga practice, yoga retreat, yoga workshop, yoga community, holistic, spiritual, healing, flexibility, strength, balance, peace, tranquility, zen, asanas, " />
+        <meta name="description" content="Discover tranquility and enhance your well-being at our premier yoga studio. Offering a wide variety of classes suitable for all levels, from beginners to advanced practitioners, we provide a serene environment to deepen your practice. Our experienced instructors are dedicated to guiding you on your journey to improved health and mindfulness. Join us to experience the benefits of yoga in a supportive and welcoming community. Explore our class schedule, workshops, and special events to find the perfect fit for your lifestyle." />
+
+        <title>Embrace Tranquility with BBKIZK Yoga</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel='stylesheet' href='css/boxicons.min.css'>
+        <link rel="stylesheet" href="css/aos.css">
+        <link rel="stylesheet" href="css/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    </head>
+    <body>
+    
+    <!-- Header Block: Floating Glass Navigation with Slide-In Mobile Menu -->
+<header class="header-glass-nav" id="main-header">
+    <nav class="nav-container">
+    <div class="nav-wrapper">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+        <div class="logo-circle"></div>
+        <span class="brand-text">BBKIZK</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <ul class="nav-menu" id="navMenu">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item dropdown-trigger">
+            <button class="nav-link dropdown-btn" id="pagesDropdown">
+            Blog
+            <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            </button>
+            <ul class="dropdown-menu-new" id="dropdownMenu">
+            <li><a href="revitalize-your-mind-and-body-at-bbkizks-exclusive-yoga-retreat.html" class="dropdown-link">Revitalize Your Mind and Body at BBKIZK's Exclusive Yoga Retreat</a></li>
+            <li><a href="embrace-wellness-at-bbkizk-with-the-power-of-asanas.html" class="dropdown-link">Embrace Wellness at BBKIZK with the Power of Asanas</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a href="reviews.html" class="nav-link">Testimonials</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-link">About Us</a>
+        </li>
+        </ul>
+        
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        </button>
+    </div>
+    </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+</header>
+
+<!-- JavaScript for Header Functionality -->
+<script>
+(function() {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navMenu = document.getElementById('navMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const pagesDropdown = document.getElementById('pagesDropdown');
+    const header = document.getElementById('main-header');
+    
+    // Toggle mobile menu
+    function toggleMobileMenu() {
+    hamburgerBtn.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    mobileOverlay.classList.toggle('active');
+    document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    // Close mobile menu
+    function closeMobileMenu() {
+    hamburgerBtn.classList.remove('active');
+    navMenu.classList.remove('active');
+    mobileOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+    }
+    
+    // Toggle dropdown menu
+    function toggleDropdown(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const parentItem = pagesDropdown.closest('.dropdown-trigger');
+    parentItem.classList.toggle('active');
+    }
+    
+    // Event listeners
+    hamburgerBtn.addEventListener('click', toggleMobileMenu);
+    mobileOverlay.addEventListener('click', closeMobileMenu);
+    pagesDropdown.addEventListener('click', toggleDropdown);
+
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+    if (!e.target.closest('.dropdown-trigger')) {
+        document.querySelectorAll('.dropdown-trigger').forEach(item => {
+        item.classList.remove('active');
+        });
+    }
+    });
+    
+    // Header scroll effect
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 100) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+    
+    lastScroll = currentScroll;
+    });
+    
+    // Close mobile menu on window resize
+    window.addEventListener('resize', () => {
+    if (window.innerWidth > 992) {
+        closeMobileMenu();
+    }
+    });
+})();
+</script>
+
+<main>
+
+
+
+
+
+
+
+
+<section class="contact-form-block-zx8q" id="contact-zx8q" data-aos="fade-up" data-aos-duration="800">
+    <div class="contact-container-zx8q">
+    <div class="contact-form-wrapper-zx8q">
+        <div class="form-header-zx8q">
+        <h2 class="form-title-zx8q">Get In Touch</h2>
+        <div class="title-underline-zx8q"></div>
+        </div>
+        
+        <form class="contact-form-zx8q" method="POST" action="order.php">
+        <div class="form-group-zx8q">
+            <label for="name-zx8q" class="form-label-zx8q">Your Name</label>
+            <input 
+            type="text" 
+            id="name-zx8q" 
+            name="name" 
+            class="form-input-zx8q" 
+            required
+            />
+        </div>
+        
+        <div class="form-group-zx8q">
+            <label for="email-zx8q" class="form-label-zx8q">Email Address</label>
+            <input 
+            type="email" 
+            id="email-zx8q" 
+            name="email" 
+            class="form-input-zx8q" 
+            required
+            />
+        </div>
+        
+        <div class="form-group-zx8q">
+            <label for="message-zx8q" class="form-label-zx8q">Your Message</label>
+            <textarea 
+            id="message-zx8q" 
+            name="message" 
+            class="form-textarea-zx8q" 
+            rows="6" 
+            required
+            ></textarea>
+        </div>
+        
+        <button type="submit" class="form-submit-zx8q">
+            <span class="button-text-zx8q">Send Message</span>
+            <span class="button-arrow-zx8q">→</span>
+        </button>
+        </form>
+    </div>
+    
+    <div class="decorative-shapes-zx8q">
+        <div class="shape-circle-zx8q shape-1-zx8q"></div>
+        <div class="shape-circle-zx8q shape-2-zx8q"></div>
+        <div class="shape-blob-zx8q"></div>
+    </div>
+    </div>
+</section>
+
+</main>
+<footer class="footer-block-modern" id="footer-section-xyz">
+    <div class="footer-container">
+    <!-- Company Info Section -->
+    <div class="footer-company-info" >
+        <h3 class="footer-brand">BBKIZK</h3>
+        <div class="footer-contact-details">
+        <div class="footer-contact-item">
+            <svg class="footer-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+            </svg>
+            <p class="footer-address">USA, San Francisco, 02 Irma Flat Suite 572</p>
+        </div>
+        <div class="footer-contact-item">
+            <svg class="footer-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+            </svg>
+            <a href="tel:1 379-122-7792" class="footer-phone">1 379-122-7792</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Navigation Links Section -->
+    <div class="footer-navigation" >
+        <nav class="footer-nav-grid">
+        <div class="footer-nav-column">
+            <h4 class="footer-nav-title">Navigation</h4>
+            <ul class="footer-nav-list">
+            <li><a href="revitalize-your-mind-and-body-at-bbkizks-exclusive-yoga-retreat.html" class="footer-link">Revitalize Your Mind and Body at BBKIZK's Exclusive Yoga Retreat</a></li>
+            <li><a href="embrace-wellness-at-bbkizk-with-the-power-of-asanas.html" class="footer-link">Embrace Wellness at BBKIZK with the Power of Asanas</a></li>
+            </ul>
+        </div>
+        <div class="footer-nav-column">
+            <h4 class="footer-nav-title">Legal</h4>
+            <ul class="footer-nav-list">
+            <li><a href="policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom" >
+    <div class="footer-divider"></div>
+    <p class="footer-copyright">© 2025 All rights reserved. BBKIZK</p>
+    </div>
+
+    <!-- Decorative Gradient Element -->
+    <div class="footer-gradient-accent"></div>
+</footer>
+
+
+
+    <script type="text/javascript" src="js/popper.js"></script><script> window.start.init({Palette:"palette1",Mode:"banner bottom",Time:"0", Message: "We use cookies to improve the site and its user experience. By continuing to use the site, you agree to the use of cookies. You can always disable cookies in your browser settings.", ButtonText: "Accept", LinkText: "Learn more"})</script>
+        
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>AOS.init();</script>
+    </body>
+</html>

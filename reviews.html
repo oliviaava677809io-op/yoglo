@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta name="keywords" content="yoga, yoga studio, meditation, wellness, fitness, health, relaxation, mindfulness, yoga classes, yoga teacher, yoga poses, yoga practice, yoga retreat, yoga workshop, yoga community, holistic, spiritual, healing, flexibility, strength, balance, peace, tranquility, zen, asanas, " />
+        <meta name="description" content="Discover tranquility and enhance your well-being at our premier yoga studio. Offering a wide variety of classes suitable for all levels, from beginners to advanced practitioners, we provide a serene environment to deepen your practice. Our experienced instructors are dedicated to guiding you on your journey to improved health and mindfulness. Join us to experience the benefits of yoga in a supportive and welcoming community. Explore our class schedule, workshops, and special events to find the perfect fit for your lifestyle." />
+
+        <title>Embrace Tranquility with BBKIZK Yoga</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel='stylesheet' href='css/boxicons.min.css'>
+        <link rel="stylesheet" href="css/aos.css">
+        <link rel="stylesheet" href="css/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    </head>
+    <body>
+    
+    <!-- Header Block: Floating Glass Navigation with Slide-In Mobile Menu -->
+<header class="header-glass-nav" id="main-header">
+    <nav class="nav-container">
+    <div class="nav-wrapper">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+        <div class="logo-circle"></div>
+        <span class="brand-text">BBKIZK</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <ul class="nav-menu" id="navMenu">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item dropdown-trigger">
+            <button class="nav-link dropdown-btn" id="pagesDropdown">
+            Blog
+            <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            </button>
+            <ul class="dropdown-menu-new" id="dropdownMenu">
+            <li><a href="revitalize-your-mind-and-body-at-bbkizks-exclusive-yoga-retreat.html" class="dropdown-link">Revitalize Your Mind and Body at BBKIZK's Exclusive Yoga Retreat</a></li>
+            <li><a href="embrace-wellness-at-bbkizk-with-the-power-of-asanas.html" class="dropdown-link">Embrace Wellness at BBKIZK with the Power of Asanas</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a href="reviews.html" class="nav-link">Testimonials</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-link">About Us</a>
+        </li>
+        </ul>
+        
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        </button>
+    </div>
+    </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+</header>
+
+<!-- JavaScript for Header Functionality -->
+<script>
+(function() {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navMenu = document.getElementById('navMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const pagesDropdown = document.getElementById('pagesDropdown');
+    const header = document.getElementById('main-header');
+    
+    // Toggle mobile menu
+    function toggleMobileMenu() {
+    hamburgerBtn.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    mobileOverlay.classList.toggle('active');
+    document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    // Close mobile menu
+    function closeMobileMenu() {
+    hamburgerBtn.classList.remove('active');
+    navMenu.classList.remove('active');
+    mobileOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+    }
+    
+    // Toggle dropdown menu
+    function toggleDropdown(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const parentItem = pagesDropdown.closest('.dropdown-trigger');
+    parentItem.classList.toggle('active');
+    }
+    
+    // Event listeners
+    hamburgerBtn.addEventListener('click', toggleMobileMenu);
+    mobileOverlay.addEventListener('click', closeMobileMenu);
+    pagesDropdown.addEventListener('click', toggleDropdown);
+
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+    if (!e.target.closest('.dropdown-trigger')) {
+        document.querySelectorAll('.dropdown-trigger').forEach(item => {
+        item.classList.remove('active');
+        });
+    }
+    });
+    
+    // Header scroll effect
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 100) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+    
+    lastScroll = currentScroll;
+    });
+    
+    // Close mobile menu on window resize
+    window.addEventListener('resize', () => {
+    if (window.innerWidth > 992) {
+        closeMobileMenu();
+    }
+    });
+})();
+</script>
+
+<main>
+
+
+
+
+<!-- Testimonials Block: Carousel with SVG Avatars -->
+<section class="testimonials-carousel-section" id="testimonials-zx92" data-aos="fade-up">
+    <div class="container">
+    <div class="testimonials-header">
+        <h2 class="testimonials-title">Testimonials</h2>
+    </div>
+    
+    <div class="testimonials-carousel-wrapper">
+        <div class="testimonials-carousel">
+        <input type="radio" name="testimonial-slide" id="slide1" checked>
+        <input type="radio" name="testimonial-slide" id="slide2">
+        <input type="radio" name="testimonial-slide" id="slide3">
+        
+        <div class="testimonials-track">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card" data-slide="1">
+            <div class="testimonial-content">
+                <div class="testimonial-avatar">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                    </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="50" fill="url(#grad1)"/>
+                    <circle cx="50" cy="35" r="15" fill="#ffffff" opacity="0.9"/>
+                    <ellipse cx="50" cy="75" rx="25" ry="20" fill="#ffffff" opacity="0.9"/>
+                </svg>
+                </div>
+                <div class="testimonial-text-wrapper">
+                <div class="quote-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20C10 14.477 14.477 10 20 10V14C16.686 14 14 16.686 14 20H18V30H10V20Z" fill="currentColor" opacity="0.2"/>
+                    <path d="M22 20C22 14.477 26.477 10 32 10V14C28.686 14 26 16.686 26 20H30V30H22V20Z" fill="currentColor" opacity="0.2"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">I've been attending classes at BBKIZK Yoga Studio for the past six months, and the transformation in both my physical and mental well-being has been remarkable. The instructors are incredibly knowledgeable and create a welcoming environment that makes every session a joy. I highly recommend this studio to anyone looking to improve their yoga practice and overall health.</p>
+                <h4 class="testimonial-name">Robert Kelly</h4>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card" data-slide="2">
+            <div class="testimonial-content">
+                <div class="testimonial-avatar">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+                    </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="50" fill="url(#grad2)"/>
+                    <circle cx="50" cy="35" r="15" fill="#ffffff" opacity="0.9"/>
+                    <ellipse cx="50" cy="75" rx="25" ry="20" fill="#ffffff" opacity="0.9"/>
+                </svg>
+                </div>
+                <div class="testimonial-text-wrapper">
+                <div class="quote-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20C10 14.477 14.477 10 20 10V14C16.686 14 14 16.686 14 20H18V30H10V20Z" fill="currentColor" opacity="0.2"/>
+                    <path d="M22 20C22 14.477 26.477 10 32 10V14C28.686 14 26 16.686 26 20H30V30H22V20Z" fill="currentColor" opacity="0.2"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">BBKIZK Yoga Studio has become my sanctuary. The atmosphere is serene, and the variety of classes offered ensures there's something for everyone, regardless of skill level. The community here is supportive and friendly, and I've made lasting friendships. This place is more than just a yoga studio; it's a haven for personal growth and wellness.</p>
+                <h4 class="testimonial-name">Aubrey Edwards</h4>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card" data-slide="3">
+            <div class="testimonial-content">
+                <div class="testimonial-avatar">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+                    </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="50" fill="url(#grad3)"/>
+                    <circle cx="50" cy="35" r="15" fill="#ffffff" opacity="0.9"/>
+                    <ellipse cx="50" cy="75" rx="25" ry="20" fill="#ffffff" opacity="0.9"/>
+                </svg>
+                </div>
+                <div class="testimonial-text-wrapper">
+                <div class="quote-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20C10 14.477 14.477 10 20 10V14C16.686 14 14 16.686 14 20H18V30H10V20Z" fill="currentColor" opacity="0.2"/>
+                    <path d="M22 20C22 14.477 26.477 10 32 10V14C28.686 14 26 16.686 26 20H30V30H22V20Z" fill="currentColor" opacity="0.2"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">I was hesitant to try yoga, but BBKIZK Yoga Studio came highly recommended by a friend. From my first class, I felt welcomed and at ease. The instructors are patient and provide clear guidance, which has helped me progress quickly. The studio's commitment to creating a peaceful and inclusive space is evident in every detail. It's been a life-changing experience for me!</p>
+                <h4 class="testimonial-name">Gary Adams</h4>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="carousel-controls">
+            <label for="slide1" class="carousel-dot" aria-label="Go to testimonial 1"></label>
+            <label for="slide2" class="carousel-dot" aria-label="Go to testimonial 2"></label>
+            <label for="slide3" class="carousel-dot" aria-label="Go to testimonial 3"></label>
+        </div>
+        
+        <div class="carousel-navigation">
+            <label for="slide3" class="carousel-nav carousel-prev" aria-label="Previous testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </label>
+            <label for="slide2" class="carousel-nav carousel-next" aria-label="Next testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </label>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<script>
+// Pure CSS carousel - auto-advance functionality
+(function() {
+    const slides = document.querySelectorAll('input[name="testimonial-slide"]');
+    let currentSlide = 0;
+    
+    function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].checked = true;
+    }
+    
+    // Auto-advance every 5 seconds
+    setInterval(nextSlide, 5000);
+    
+    // Update navigation labels dynamically
+    const prevNav = document.querySelector('.carousel-prev');
+    const nextNav = document.querySelector('.carousel-next');
+    
+    slides.forEach((slide, index) => {
+    slide.addEventListener('change', function() {
+        if (this.checked) {
+        currentSlide = index;
+        const prevIndex = (index - 1 + slides.length) % slides.length;
+        const nextIndex = (index + 1) % slides.length;
+        prevNav.setAttribute('for', `slide${prevIndex + 1}`);
+        nextNav.setAttribute('for', `slide${nextIndex + 1}`);
+        }
+    });
+    });
+})();
+</script>
+
+
+
+
+
+</main>
+<footer class="footer-block-modern" id="footer-section-xyz">
+    <div class="footer-container">
+    <!-- Company Info Section -->
+    <div class="footer-company-info" >
+        <h3 class="footer-brand">BBKIZK</h3>
+        <div class="footer-contact-details">
+        <div class="footer-contact-item">
+            <svg class="footer-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+            </svg>
+            <p class="footer-address">USA, San Francisco, 02 Irma Flat Suite 572</p>
+        </div>
+        <div class="footer-contact-item">
+            <svg class="footer-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+            </svg>
+            <a href="tel:1 379-122-7792" class="footer-phone">1 379-122-7792</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Navigation Links Section -->
+    <div class="footer-navigation" >
+        <nav class="footer-nav-grid">
+        <div class="footer-nav-column">
+            <h4 class="footer-nav-title">Navigation</h4>
+            <ul class="footer-nav-list">
+            <li><a href="revitalize-your-mind-and-body-at-bbkizks-exclusive-yoga-retreat.html" class="footer-link">Revitalize Your Mind and Body at BBKIZK's Exclusive Yoga Retreat</a></li>
+            <li><a href="embrace-wellness-at-bbkizk-with-the-power-of-asanas.html" class="footer-link">Embrace Wellness at BBKIZK with the Power of Asanas</a></li>
+            </ul>
+        </div>
+        <div class="footer-nav-column">
+            <h4 class="footer-nav-title">Legal</h4>
+            <ul class="footer-nav-list">
+            <li><a href="policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom" >
+    <div class="footer-divider"></div>
+    <p class="footer-copyright">© 2025 All rights reserved. BBKIZK</p>
+    </div>
+
+    <!-- Decorative Gradient Element -->
+    <div class="footer-gradient-accent"></div>
+</footer>
+
+
+
+    <script type="text/javascript" src="js/popper.js"></script><script> window.start.init({Palette:"palette1",Mode:"banner bottom",Time:"0", Message: "We use cookies to improve the site and its user experience. By continuing to use the site, you agree to the use of cookies. You can always disable cookies in your browser settings.", ButtonText: "Accept", LinkText: "Learn more"})</script>
+        
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>AOS.init();</script>
+    </body>
+</html>
